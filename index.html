@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="KORZH FAN — независимый фанатский проект. Узнай, какой ты фанат Макса Коржа.">
+  <title>KORZH FAN — На сколько ты Корж?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="KORZH FAN">KORZH<span>FAN</span></a>
+    <nav>
+      <a href="#test">Тест</a>
+      <a href="#fans">Фанаты</a>
+      <a href="#stories">Истории</a>
+      <a href="#concerts">Концерты</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Открыть меню">☰</button>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">НЕОФИЦИАЛЬНЫЙ ФАН-ПРОЕКТ</p>
+        <h1>ТЫ<br><span>НА СКОЛЬКО</span><br>КОРЖ?</h1>
+        <p class="lead">7 вопросов. Один результат.<br>Узнай, какой ты фанат — и проверь друзей.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#test" id="startTest">ПРОВЕРИТЬ СЕБЯ <b>→</b></a>
+          <a class="btn btn-ghost" href="#fans">ПОСМОТРЕТЬ ФАНАТОВ</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orb orb-a"></div><div class="orb orb-b"></div>
+        <div class="hero-card"><span>KF / 001</span><strong>LIVE<br>YOUR<br>WAY</strong><i>01</i></div>
+      </div>
+      <div class="scroll-hint">SCROLL ↓</div>
+    </section>
+
+    <section class="ticker" aria-hidden="true"><div>СВОИ ЛЮДИ · СВОИ ИСТОРИИ · СВОЙ ПУТЬ · СВОИ ЛЮДИ · СВОИ ИСТОРИИ · СВОЙ ПУТЬ · </div></section>
+
+    <section class="section intro-grid" id="test">
+      <div><p class="eyebrow">01 / ГЛАВНЫЙ ТЕСТ</p><h2>Не угадывай.<br><em>Проверь.</em></h2></div>
+      <div><p class="muted">Ответь честно на 7 вопросов. Мы не собираем имя, телефон или точную геолокацию — только твой результат.</p><div class="mini-stats"><span><b>07</b> вопросов</span><span><b>08</b> типов</span><span><b>01</b> результат</span></div></div>
+    </section>
+
+    <section class="quiz-wrap section">
+      <div class="quiz-card" id="quizCard">
+        <div class="quiz-top"><span id="questionNumber">ВОПРОС 01 / 07</span><span id="progressText">14%</span></div>
+        <div class="progress"><span id="progressBar"></span></div>
+        <div id="quizContent"></div>
+      </div>
+      <div class="result-card hidden" id="resultCard">
+        <p class="eyebrow">ТВОЙ РЕЗУЛЬТАТ</p>
+        <div class="result-score"><span id="resultScore">0</span><small>/100</small></div>
+        <h2 id="resultTitle">—</h2>
+        <p id="resultText" class="result-text">—</p>
+        <div class="bars" id="resultBars"></div>
+        <div class="result-actions"><button class="btn btn-primary" id="shareBtn">ПОДЕЛИТЬСЯ РЕЗУЛЬТАТОМ ↗</button><button class="btn btn-ghost" id="restartBtn">ПРОЙТИ ЕЩЁ РАЗ</button></div>
+        <p class="share-note" id="shareNote"></p>
+      </div>
+    </section>
+
+    <section class="section fans" id="fans">
+      <div class="section-head"><div><p class="eyebrow">02 / ФАНАТЫ</p><h2>Сколько нас<br><em>в твоём городе?</em></h2></div><span class="section-no">002</span></div>
+      <div class="city-grid">
+        <article><b>Москва</b><span>скоро</span></article><article><b>Минск</b><span>скоро</span></article><article><b>Санкт-Петербург</b><span>скоро</span></article><article><b>Казань</b><span>скоро</span></article><article><b>Прага</b><span>скоро</span></article><article><b>Твой город</b><span>+</span></article>
+      </div>
+      <div class="map-note">Карта будет считать только город. Без адресов и точной геолокации.</div>
+    </section>
+
+    <section class="section stories" id="stories">
+      <div class="section-head"><div><p class="eyebrow">03 / ИСТОРИИ</p><h2>Музыка — это<br><em>люди.</em></h2></div><span class="section-no">003</span></div>
+      <div class="story-grid">
+        <article class="story"><span class="tag">ПРИМЕР</span><p>«Включили музыку в машине и просто поехали без маршрута. В тот вечер всё поменялось.»</p><footer><b>Аноним</b><span>Минск</span></footer></article>
+        <article class="story"><span class="tag">ПРИМЕР</span><p>«Есть песни, которые возвращают тебя в конкретный день. Даже спустя годы.»</p><footer><b>Аноним</b><span>Казань</span></footer></article>
+        <article class="story story-cta"><span>ТВОЯ ИСТОРИЯ</span><strong>Расскажи свою.</strong><button class="text-btn" onclick="alert('Форма историй появится в следующем обновлении.')">ОТПРАВИТЬ →</button></article>
+      </div>
+    </section>
+
+    <section class="section concerts" id="concerts">
+      <div class="concert-box"><div><p class="eyebrow">04 / КОНЦЕРТЫ</p><h2>Собираешься<br><em>на концерт?</em></h2><p class="muted">Проверяй даты и билеты только по официальным источникам. KORZH FAN не продаёт билеты.</p></div><a class="btn btn-primary" href="https://maxkorzh.live/" target="_blank" rel="noopener">ОФИЦИАЛЬНЫЕ ДАТЫ ↗</a></div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="brand">KORZH<span>FAN</span></div><p>Независимый фанатский проект.<br>Не является официальным сайтом и не связан с Максом Коржом или его командой.</p><div class="footer-links"><a href="#top">Наверх ↑</a><a href="#test">Тест</a><a href="#stories">Истории</a></div><small>© 2026 KORZH FAN</small></footer>
+  <script src="app.js"></script>
+</body>
+</html>
