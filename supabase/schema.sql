@@ -59,7 +59,7 @@ $$;
 
 grant execute on function public.city_leaderboard() to anon, authenticated;
 
-a lter table public.admin_profiles enable row level security;
+alter table public.admin_profiles enable row level security;
 alter table public.stories enable row level security;
 alter table public.analytics_events enable row level security;
 alter table public.city_fans enable row level security;
