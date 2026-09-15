@@ -1,0 +1,56 @@
+/* KORZH FAN — global mobile optimization */
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-padding-top:64px}
+body{overflow-x:hidden;min-width:0}
+img{max-width:100%;height:auto}
+a,button{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+@media(max-width:800px){
+  .topbar{height:64px;padding:0 14px;backdrop-filter:blur(10px)}
+  .brand{font-size:20px}
+  .menu-btn{display:grid;place-items:center;width:44px;height:44px;padding:0;cursor:pointer}
+  .topbar nav{display:none}
+  .menu-open .topbar nav{display:flex;position:absolute;left:10px;right:10px;top:64px;flex-direction:column;gap:0;padding:8px;background:#0a0a0af7;border:1px solid var(--line);box-shadow:0 18px 40px #000;z-index:100}
+  .menu-open .topbar nav a{display:flex;align-items:center;min-height:48px;padding:13px 12px;border-bottom:1px solid #202020;font-size:11px}
+  .menu-open .topbar nav a:last-child{border-bottom:0}
+  .section{padding:64px 16px}
+  .hero{display:flex;flex-direction:column;min-height:auto;padding-top:42px;padding-bottom:48px;align-items:stretch}
+  .hero-art{height:270px;order:-1;margin:-5px -8px 12px;overflow:hidden}
+  .hero-card{width:165px;height:235px;padding:18px;transform:rotate(4deg)}
+  .hero-card strong{left:18px;bottom:30px;font-size:43px}
+  .orb-a{width:260px;height:260px}.orb-b{width:340px;height:120px;filter:blur(25px)}
+  .hero h1{font-size:clamp(56px,17vw,92px);line-height:.88}
+  .lead{font-size:15px;line-height:1.5;margin:20px 0}
+  .hero-actions{display:grid;grid-template-columns:1fr;gap:8px}
+  .btn{width:100%;min-height:52px;padding:0 16px}
+  .intro-grid,.section-head{grid-template-columns:1fr;gap:20px}
+  .intro-grid h2,.section-head h2{font-size:clamp(46px,14vw,72px)}
+  .answers{grid-template-columns:1fr;gap:8px}
+  .quiz-card,.result-card{padding:20px 16px;border-radius:6px}
+  .question{font-size:clamp(30px,9vw,46px);margin-bottom:22px}
+  .answer{min-height:58px;padding:14px 15px;font-size:13px}
+  .result-score{font-size:76px}.result-card h2{font-size:clamp(42px,12vw,62px)}
+  .result-actions{display:grid;grid-template-columns:1fr;gap:8px}
+  .share-card-preview{width:100%;margin:22px auto;padding:17px}
+  .live-card{grid-template-columns:44px 1fr;gap:12px;padding:16px}
+  .live-card .text-btn{grid-column:1/-1;padding-top:4px}
+  .viral-card{grid-template-columns:1fr;gap:22px;padding:24px 18px}
+  .rating-grid,.money-grid{grid-template-columns:1fr}
+  .rating-item{min-height:150px;padding:18px}
+  .city-grid{grid-template-columns:1fr 1fr}
+  .city-grid article{min-height:105px;padding:16px}
+  .story-grid{grid-template-columns:1fr;gap:8px}
+  .story{min-height:220px;padding:18px}
+  .concert-box{display:block;padding:22px 18px}
+  .concert-box h2{font-size:clamp(44px,13vw,68px);margin-bottom:24px}
+  .footer{grid-template-columns:1fr;padding:35px 16px;gap:14px}
+}
+@media(max-width:480px){
+  .section{padding:52px 14px}.topbar{padding:0 12px}
+  .hero{padding-top:32px}.hero-art{height:225px}.hero-card{width:145px;height:205px}.hero-card strong{font-size:38px}
+  .hero h1{font-size:clamp(50px,17vw,76px)}.eyebrow{font-size:9px;letter-spacing:.15em;margin-bottom:12px}.lead{font-size:14px}
+  .city-grid{grid-template-columns:1fr}.city-grid article{min-height:92px}
+  .quiz-card,.result-card{padding:18px 13px}.question{font-size:30px}.answer{min-height:56px;font-size:12px}
+  .result-score{font-size:68px}.share-card-preview{padding:13px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@supports(padding:max(0px)){.topbar{padding-left:max(12px,env(safe-area-inset-left));padding-right:max(12px,env(safe-area-inset-right))}.footer{padding-bottom:max(35px,calc(35px + env(safe-area-inset-bottom)))}}
