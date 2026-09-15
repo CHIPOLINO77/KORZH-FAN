@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090909">
+<meta name="description" content="Фан-галерея KORZH FAN — фотографии фанатов, концертов и моментов.">
+<title>Фан-галерея — KORZH FAN</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style-v2.css">
+<link rel="stylesheet" href="photo-layer.css">
+<style>
+.fan-wrap{max-width:1320px;margin:auto}.fan-hero{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:stretch}.fan-copy{padding:10px 0}.fan-copy h1{font:700 clamp(56px,9vw,130px)/.84 Oswald;margin:12px 0 24px;letter-spacing:-.04em}.fan-copy h1 span{color:#ef3d35}.fan-copy .lead{max-width:650px}.fan-badge{display:inline-flex;align-items:center;gap:9px;border:1px solid #303030;background:#111;padding:8px 11px;color:#999;font-size:10px;letter-spacing:.13em}.fan-badge b{color:#ef3d35}.upload-card{position:relative;border:1px solid #343434;background:linear-gradient(145deg,#151515,#0b0b0b);padding:24px;min-height:320px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}.upload-card:before{content:"";position:absolute;width:260px;height:260px;border-radius:50%;background:#ef3d35;filter:blur(80px);opacity:.13;right:-80px;top:-80px}.upload-card>*{position:relative;z-index:1}.upload-card h2{font:600 34px/1 Oswald;margin:0 0 10px}.upload-card p{color:#888;font-size:12px;line-height:1.6;max-width:480px}.upload-form{display:grid;grid-template-columns:1fr 1fr;gap:9px}.upload-form input{height:44px;background:#090909;border:1px solid #333;border-radius:6px;color:#fff;padding:0 12px;outline:0}.upload-form input:focus{border-color:#ef3d35}.upload-file{grid-column:1/-1;border:1px dashed #454545;background:#0b0b0b;padding:16px;cursor:pointer;transition:.2s}.upload-file:hover{border-color:#ef3d35}.upload-file input{display:none}.upload-file strong{display:block;font:600 22px Oswald}.upload-file span{display:block;color:#666;font-size:10px;margin-top:4px}.upload-status{min-height:18px;font-size:11px;color:#777;margin-top:8px}.upload-status.ok{color:#55d995}.upload-status.error{color:#ff7068}.fan-section{padding-top:25px}.fan-section-head{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:20px}.fan-section-head h2{font:600 clamp(46px,7vw,86px)/.9 Oswald;margin:0}.fan-section-head h2 em{color:#ef3d35;font-style:normal}.fan-count{font:600 18px Oswald;color:#777}.fan-count b{color:#ef3d35}.fan-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.fan-shot{margin:0;border:1px solid #292929;background:#101010;overflow:hidden;position:relative}.fan-shot.featured{grid-column:span 2;grid-row:span 2}.fan-shot img{width:100%;height:250px;display:block;object-fit:cover;transition:.45s}.fan-shot.featured img{height:512px}.fan-shot:hover img{transform:scale(1.04)}.fan-shot figcaption{padding:11px 13px}.fan-shot strong{display:block;font:600 19px Oswald}.fan-shot small{display:block;color:#777;font-size:9px;letter-spacing:.08em;margin-top:4px;text-transform:uppercase}.fan-shot .tag{position:absolute;left:10px;top:10px;padding:6px 8px;background:#090909df;border:1px solid #ffffff22;color:#fff;font:600 9px Oswald;letter-spacing:.1em}.empty{padding:40px;border:1px dashed #292929;color:#666;text-align:center}.fan-note{color:#666;font-size:10px;line-height:1.6;margin-top:18px}.back-row{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}.mini-btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid #303030;background:#111;color:#fff;text-decoration:none;padding:10px 14px;font-size:10px;font-weight:800;letter-spacing:.08em}.mini-btn:hover{border-color:#ef3d35}@media(max-width:950px){.fan-hero{grid-template-columns:1fr}.fan-grid{grid-template-columns:repeat(3,1fr)}.fan-shot.featured{grid-column:span 2}}@media(max-width:700px){.fan-grid{grid-template-columns:1fr 1fr}.fan-shot.featured{grid-column:span 2;grid-row:auto}.fan-shot img,.fan-shot.featured img{height:210px}.fan-section-head{display:block}.fan-count{margin-top:10px}.upload-card{min-height:0}.upload-form{grid-template-columns:1fr}.upload-file{grid-column:auto}}@media(max-width:480px){.fan-copy h1{font-size:54px}.fan-grid{gap:8px}.fan-shot img,.fan-shot.featured img{height:185px}.fan-shot figcaption{padding:8px}.fan-shot strong{font-size:16px}.fan-shot small{font-size:8px}.upload-card{padding:17px}.upload-card h2{font-size:28px}}
+</style>
+</head>
+<body class="photo-page">
+<div class="noise"></div>
+<header class="topbar">
+<a class="brand" href="index.html">KORZH<span>FAN</span></a>
+<nav><a href="test.html">Тест</a><a href="rating.html">Рейтинг</a><a href="cities.html">Города</a><a href="stories.html">Истории</a><a href="photos.html">Фото</a><a href="fan-gallery.html">ФАНЫ</a><a href="concerts.html">Концерты</a><a href="support.html">Поддержка</a></nav>
+<button class="menu-btn" id="menuBtn">☰</button>
+</header>
+<main class="fan-wrap">
+<section class="section fan-hero">
+<div class="fan-copy">
+<span class="fan-badge"><b>LIVE</b> KORZH FAN / COMMUNITY GALLERY</span>
+<h1>ТВОЙ<br><span>КАДР.</span></h1>
+<p class="lead">Фотки с концертов, поездок, мерча и просто моменты, которыми хочется поделиться. Загружай свои — лучшие попадут в общую фан-ленту.</p>
+<div class="back-row"><a class="mini-btn" href="index.html">← НА ГЛАВНУЮ</a><a class="mini-btn" href="photos.html">ОФИЦИАЛЬНЫЕ ФОТО →</a></div>
+</div>
+<div class="upload-card">
+<div><p class="eyebrow">FAN DROP / 001</p><h2>ЗАГРУЗИ<br>СВОЮ ФОТКУ</h2><p>Можно выбрать сразу несколько изображений. JPG, PNG, WEBP или GIF, до 6 МБ каждое. Перед публикацией фото проходит модерацию.</p></div>
+<div>
+<div class="upload-form">
+<input id="author" maxlength="40" placeholder="Твоё имя / ник">
+<input id="city" maxlength="60" placeholder="Город">
+<label class="upload-file" for="files"><strong>＋ ВЫБРАТЬ ФОТО</strong><span id="fileLabel">Ничего не выбрано</span><input id="files" type="file" accept="image/jpeg,image/png,image/webp,image/gif" multiple></label>
+</div>
+<button class="btn btn-primary" id="uploadBtn" style="width:100%;margin-top:10px">ЗАГРУЗИТЬ В ГАЛЕРЕЮ →</button>
+<div class="upload-status" id="uploadStatus"></div>
+</div>
+</div>
+</section>
+<section class="section fan-section">
+<div class="fan-section-head"><div><p class="eyebrow">FAN / WALL</p><h2>СТЕНА<br><em>ФАНОВ.</em></h2></div><div class="fan-count"><b id="photoCount">0</b> кадров</div></div>
+<div class="fan-grid" id="fanGrid"><div class="empty">Загружаем фан-ленту…</div></div>
+<p class="fan-note">Публикуются только одобренные фотографии. Загружая снимок, убедись, что у тебя есть право им делиться. KORZH FAN — независимый фан-проект и не является официальным сайтом артиста.</p>
+</section>
+</main>
+<footer class="footer"><span>KORZH FAN — независимый фан-проект</span><span>FAN GALLERY / COMMUNITY</span></footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-client.js"></script>
+<script>
+const db=()=>window.korzhSupabase;const $=id=>document.getElementById(id);const BUCKET='fan-gallery';
+function esc(v){return String(v??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}
+function publicUrl(row){if(row.external_url)return row.external_url;const {data}=db().storage.from(BUCKET).getPublicUrl(row.storage_path);return data.publicUrl}
+function visitorId(){let id=localStorage.getItem('korzh_fan_gallery_visitor');if(!id){id=(crypto.randomUUID?crypto.randomUUID():Date.now()+'-'+Math.random()).replace(/-/g,'').slice(0,36);localStorage.setItem('korzh_fan_gallery_visitor',id)}return id}
+async function loadGallery(){const d=db();if(!d){$('fanGrid').innerHTML='<div class="empty">Supabase пока не загрузился.</div>';return}const {data,error}=await d.from('fan_photos').select('id,storage_path,external_url,author_name,city,caption,created_at').eq('status','approved').order('created_at',{ascending:false}).limit(80);if(error){$('fanGrid').innerHTML='<div class="empty">Галерея ещё не подключена. Выполни supabase/fan-gallery.sql в Supabase SQL Editor.</div>';return}const rows=data||[];$('photoCount').textContent=rows.length;if(!rows.length){$('fanGrid').innerHTML='<div class="empty">Пока пусто. Стань первым, кто добавит свой кадр.</div>';return}$('fanGrid').innerHTML=rows.map((r,i)=>`<figure class="fan-shot ${i===0?'featured':''}"><span class="tag">${r.external_url?'KORZH ARCHIVE':'FAN PHOTO'}</span><img loading="lazy" src="${esc(publicUrl(r))}" alt="${esc(r.caption||'Фото фаната')}" onerror="this.closest('figure').remove()"><figcaption><strong>${esc(r.caption||'Без подписи')}</strong><small>${esc(r.author_name||'Аноним')}${r.city?' · '+esc(r.city):''}</small></figcaption></figure>`).join('')}
+function setStatus(text,type=''){const el=$('uploadStatus');el.textContent=text;el.className='upload-status '+type}
+$('files').addEventListener('change',()=>{const fs=[...$('files').files];$('fileLabel').textContent=fs.length?`${fs.length} ${fs.length===1?'фото':'фото выбрано'}`:'Ничего не выбрано'});
+$('uploadBtn').onclick=async()=>{const d=db();if(!d)return setStatus('Supabase не загрузился.','error');const files=[...$('files').files];if(!files.length)return setStatus('Сначала выбери хотя бы одно фото.','error');if(files.length>6)return setStatus('За раз можно загрузить максимум 6 фото.','error');for(const f of files){if(!/^image\/(jpeg|png|webp|gif)$/.test(f.type))return setStatus('Можно загружать только изображения JPG, PNG, WEBP или GIF.','error');if(f.size>6*1024*1024)return setStatus(`Файл «${f.name}» больше 6 МБ.`,'error')}const author=($('author').value.trim()||'Аноним').slice(0,40),city=$('city').value.trim().slice(0,60),btn=$('uploadBtn');btn.disabled=true;btn.textContent='ЗАГРУЗКА…';setStatus('Готовим фото…');let done=0;try{for(const f of files){const ext=(f.name.split('.').pop()||'jpg').toLowerCase().replace('jpeg','jpg');const path=`uploads/${visitorId()}-${crypto.randomUUID?crypto.randomUUID():Date.now()+Math.random().toString(16).slice(2)}.${ext}`;const up=await d.storage.from(BUCKET).upload(path,f,{cacheControl:'31536000',contentType:f.type,upsert:false});if(up.error)throw up.error;const ins=await d.from('fan_photos').insert({storage_path:path,author_name:author,city,caption:'Фан-кадр',status:'pending'});if(ins.error)throw ins.error;done++;setStatus(`Загружено ${done} из ${files.length}. Фото отправлены на модерацию.`)}$('files').value='';$('fileLabel').textContent='Ничего не выбрано';setStatus(`Готово — ${done} ${done===1?'фото отправлено':'фото отправлены'} на модерацию.`, 'ok');await loadGallery()}catch(e){console.error(e);setStatus(e.message||'Не удалось загрузить фото. Проверь настройку fan-gallery.sql.','error')}finally{btn.disabled=false;btn.textContent='ЗАГРУЗИТЬ В ГАЛЕРЕЮ →'}};
+document.getElementById('menuBtn').onclick=()=>document.body.classList.toggle('menu-open');document.querySelectorAll('nav a').forEach(a=>a.onclick=()=>document.body.classList.remove('menu-open'));
+loadGallery();
+</script>
+</body>
+</html>
