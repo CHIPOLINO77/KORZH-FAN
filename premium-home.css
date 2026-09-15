@@ -67,3 +67,32 @@
   .photo-page.photo-home .corner-photo{display:none}
 }
 @media(prefers-reduced-motion:reduce){.photo-page.photo-home .hero-card{animation:none}}
+
+/* MOBILE HOME DENSITY PATCH */
+@media(max-width:600px){
+  .photo-page.photo-home .hero{padding-top:24px;padding-bottom:34px}
+  .photo-page.photo-home .hero-art{height:205px;min-height:205px}
+  .photo-page.photo-home .hero-card{width:140px;height:200px;padding:16px}
+  .photo-page.photo-home .hero-card strong{font-size:38px;left:16px;bottom:28px}
+  .photo-page.photo-home .hero-card i{right:16px;top:16px;font-size:11px}
+  .photo-page.photo-home .hero h1{font-size:clamp(54px,16vw,76px)}
+  .photo-page.photo-home .hero .lead{font-size:13px;margin:14px 0}
+  .photo-page.photo-home .hero-actions{gap:8px}
+  .photo-page.photo-home .hero-actions .btn{min-height:44px;padding:0 14px}
+  .photo-page.photo-home .viral-proof{margin-top:14px;gap:8px;font-size:7px}
+  .photo-page.photo-home .photo-strip-title{margin-bottom:18px}
+  .photo-page.photo-home .photo-strip-title h2{font-size:clamp(40px,12vw,58px)}
+  .photo-page.photo-home .home-photos{grid-template-rows:190px 135px 135px 135px 135px;gap:7px}
+  .photo-page.photo-home .home-shot figcaption{padding:24px 10px 9px;font-size:10px}
+  .photo-page.photo-home .portal-grid{padding-top:24px;gap:8px}
+  .photo-page.photo-home .portal-card{min-height:120px;padding:15px}
+  .photo-page.photo-home .portal-card span{font-size:25px}
+  .photo-page.photo-home .portal-card strong{font-size:20px}
+  .photo-page.photo-home .portal-card small{font-size:8px}
+  .photo-page.photo-home .live-strip{padding-top:28px;padding-bottom:28px}
+  .photo-page.photo-home .live-card{grid-template-columns:34px 1fr;padding:13px;gap:10px}
+  .photo-page.photo-home .live-icon{width:32px;height:32px;font-size:15px}
+  .photo-page.photo-home .live-icon svg{width:16px;height:16px}
+  .photo-page.photo-home .live-card h3{font-size:19px}
+  .photo-page.photo-home .live-card p:last-child{font-size:8px}
+}
